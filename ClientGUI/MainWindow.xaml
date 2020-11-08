@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClientGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientGUI"
+        mc:Ignorable="d"
+        Title="Simple CRUD App" Height="268.025" Width="537.618">
+    <Grid>
+        <Label Content="Simple CRUD App&#xD;&#xA;" Height="48" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Left" Margin="456,205,0,0" VerticalAlignment="Top" Width="64">
+            <ComboBoxItem Content="EN"/>
+            <ComboBoxItem Content="AR"/>
+        </ComboBox>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="180,153,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click"/>
+        <Label Content="user :" HorizontalAlignment="Left" Height="23" Margin="180,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="pass :" HorizontalAlignment="Left" Margin="180,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtb_username" HorizontalAlignment="Left" Height="23" Margin="230,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="txtb_password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="230,114,0,0"/>
+
+    </Grid>
+</Window>

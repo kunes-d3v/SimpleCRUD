@@ -11,12 +11,24 @@ namespace SimpleCRUD
         #region GUI related methods
         public string getResource(int resID, int language)
         {
-            throw new NotImplementedException();
+            string str = "";
+            // check DB for language id existance
+
+            // get resource from its ID if exists
+
+            return str;
         }
 
         public int login(string userName, string password)
         {
-            throw new NotImplementedException();
+            // hust for testing purposes !!!
+            if (userName != "kunes")
+                return 1;
+
+            if (password != "1234")
+                return 2;
+
+            return 0;
         }
         #endregion
 

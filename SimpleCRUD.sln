@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHoster", "ServiceHos
 		{DEA14D1B-572C-4F39-9D89-EF81DE647556} = {DEA14D1B-572C-4F39-9D89-EF81DE647556}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientGUI", "ClientGUI\ClientGUI.csproj", "{973BA128-82C2-46E7-80AF-9E607B61E5FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{6B1E8595-1519-49B2-A4B9-5A11F7D2EA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B1E8595-1519-49B2-A4B9-5A11F7D2EA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B1E8595-1519-49B2-A4B9-5A11F7D2EA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973BA128-82C2-46E7-80AF-9E607B61E5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973BA128-82C2-46E7-80AF-9E607B61E5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973BA128-82C2-46E7-80AF-9E607B61E5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973BA128-82C2-46E7-80AF-9E607B61E5FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
