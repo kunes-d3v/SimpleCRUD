@@ -54,31 +54,43 @@ namespace ClientGUI
         {
             // prevent empty fields
             if (string.IsNullOrEmpty(txtb_username.Text))
-                MessageBox.Show(service.getResource(10, selectedLang));
+            {
+                //MessageBox.Show(service.getResource(10, selectedLang));
+                MessageBox.Show("Please enter a username!");
+                return;
+            }
 
             if (string.IsNullOrEmpty(txtb_password.Password))
-                MessageBox.Show(service.getResource(11, selectedLang));
+            {
+                //MessageBox.Show(service.getResource(11, selectedLang));
+                MessageBox.Show("Please enter a password!");
+                return;
+            }
 
             switch (service.login(txtb_username.Text, txtb_password.Password))
             {
                 // loging success
                 case 0:
-                    MessageBox.Show(service.getResource(12, selectedLang));
+                    //MessageBox.Show(service.getResource(12, selectedLang));
+                    MessageBox.Show("Login successfully :)");
                     break;
 
                 // user name doesn't exist
                 case 1:
-                    MessageBox.Show(service.getResource(12, selectedLang));
+                    //MessageBox.Show(service.getResource(12, selectedLang));
+                    MessageBox.Show("username error!");
                     return;
 
                 // password doesn't match
                 case 2:
-                    MessageBox.Show(service.getResource(12, selectedLang));
+                    //MessageBox.Show(service.getResource(12, selectedLang));
+                    MessageBox.Show("password error!");
                     return;
 
                 // other
                 default:
-                    MessageBox.Show(service.getResource(15, selectedLang));
+                    //MessageBox.Show(service.getResource(15, selectedLang));
+                    MessageBox.Show("error!");
                     return;
             }
 

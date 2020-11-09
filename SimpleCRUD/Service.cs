@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,9 @@ namespace SimpleCRUD
 {
     public class Service : IService
     {
+        // small hack
+        
+
         #region GUI related methods
         public string getResource(int resID, int language)
         {
